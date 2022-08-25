@@ -1,3 +1,14 @@
+:root {
+  --box-shadow: 7px 7px 15px #45566754,
+  8px -8px 15px #5165790a,
+   inset -5px -4px 13px 0px #51657959,
+   inset 6px 7px 12px 0px #fffffff0;
+  --inside-shadow:6px 6px 8px rgba(13, 39, 80, 0.25),
+  -6px -6px 10px #fff,
+  inset -8px -8px 12px rgba(255,255,255,0.7),
+  inset 5px 5px 8px rgba(13,39,80,0.2);
+}
+
 body {
   height: 100vh;
   width: 100%;
@@ -9,24 +20,40 @@ body {
   justify-content: center;
   text-align: center;
   overflow: clip;
+  font-family: "Roboto", sans-serif;
 }
 body .container {
   display: flex;
   flex-direction: column;
-  width: 40%;
-  height: 90vh;
+  width: 50%;
+  height: 90%;
 }
 body .container .container-box {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  border: 1px solid #000;
+  box-shadow: var(--box-shadow);
   flex-direction: column;
+  position: relative;
+  background-color: #f4f3ee;
 }
-body .container .container-box p, body .container .container-box p a {
-  display: flex;
-  flex-direction: row;
+body .container .container-box .btn {
+  position: absolute;
+  top: 77%;
+  box-shadow: var(--inside-shadow);
+  height: 25px;
+  width: auto;
+  padding: 2px 3px;
+}
+body .container .container-box .start-game {
+  left: 10%;
+}
+body .container .container-box .new-game {
+  right: 10%;
+}
+body .container .container-box .player {
+  left: 45%;
 }
 body .container .container-box .container-inner-box {
   display: flex;
@@ -37,10 +64,98 @@ body .container .container-box .container-inner-box {
   width: 100%;
 }
 body .container .container-box .container-inner-box .card-one, body .container .container-box .container-inner-box .card-two {
-  margin-top: 10px;
   margin-right: 50px;
   transform: translateX(25px);
-  border: 1px solid #000;
-  height: 90%;
-  width: 30%;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  height: 80%;
+  width: 22%;
+}
+
+@media only screen and (min-width: 1550px) {
+  body .container {
+    width: 80%;
+    height: 90%;
+  }
+  body .container .container-box .container-inner-box .card-one, body .container .container-box .container-inner-box .card-two {
+    margin-right: 50px;
+    transform: translateX(25px);
+    border: 1px solid #000;
+    height: 85%;
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body .container {
+    width: 70%;
+    height: 90%;
+  }
+  body .container .container-box .container-inner-box .card-one, body .container .container-box .container-inner-box .card-two {
+    margin-right: 50px;
+    transform: translateX(25px);
+    height: 75%;
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body .container {
+    width: 70%;
+    height: 90%;
+  }
+  body .container .container-box .btn {
+    top: 77%;
+    height: 20px;
+    padding: 1px 2px;
+    font-size: 12px;
+  }
+  body .container .container-box .container-inner-box .card-one, body .container .container-box .container-inner-box .card-two {
+    margin-right: 50px;
+    transform: translateX(25px);
+    height: 75%;
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 426px) {
+  body .container {
+    width: 90%;
+    height: 80%;
+  }
+  body .container .container-box {
+    position: relative;
+  }
+  body .container .container-box .btn {
+    position: absolute;
+    top: 75%;
+    height: 20px;
+    font-size: 12px;
+  }
+  body .container .container-box .start-game {
+    left: 15%;
+  }
+  body .container .container-box .new-game {
+    right: 5%;
+  }
+  body .container .container-box .player {
+    left: 45%;
+    top: 70%;
+  }
+  body .container .container-box .container-inner-box .card-one, body .container .container-box .container-inner-box .card-two {
+    margin-right: 40px;
+    transform: translateX(25px);
+    height: 75% !important;
+    width: 30% !important;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 376px) {
+  body .container {
+    width: 90%;
+    height: 80%;
+  }
+  body .container .container-box .container-inner-box .card-one, body .container .container-box .container-inner-box .card-two {
+    margin-right: 30px;
+    transform: translateX(12px);
+    height: 70%;
+    width: 30%;
+  }
 }/*# sourceMappingURL=index.css.map */
