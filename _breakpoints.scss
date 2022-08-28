@@ -24,6 +24,35 @@ body{
         width: 70%;
         height: 90%;
         .container-box{
+            .btn{
+                position: absolute;
+                top: 77%;
+                text-shadow: 5px 6px 6px rgba(0,0,0,0.61);
+                height: 25px;
+                width: auto;
+                padding: 2px 3px;
+            }
+            .start-game{
+                left: 10%;
+                height: 10%;
+                width: 20%;
+                box-shadow: var(--box-shadow);
+                button{
+                    border: 1px solid transparent;
+                }
+            }
+            .new-game{
+                right: 10%;
+                height: 10%;
+                width: 20%;
+                box-shadow: var(--box-shadow);
+                button{
+                    border: 1px solid transparent;
+                }
+            }
+            .player{
+                left: 45%;
+            }
             .container-inner-box{
                 .card-one, .card-two{
                     margin-right: 50px;
