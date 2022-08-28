@@ -9,6 +9,15 @@
   inset 5px 5px 8px rgba(13,39,80,0.2);
 }
 
+* {
+  box-sizing: border-box;
+  font-family: "Poker In October Demo";
+}
+
+@font-face {
+  font-family: "Poker In October Demo";
+  src: url("card.otf");
+}
 body {
   height: 100vh;
   width: 100%;
@@ -42,6 +51,10 @@ body .container .container-box {
   position: relative;
   background-color: #f4f3ee;
 }
+body .container .container-box .start-game button:hover, body .container .container-box .new-game button:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease;
+}
 body .container .container-box .btn {
   position: absolute;
   top: 77%;
@@ -49,6 +62,7 @@ body .container .container-box .btn {
   height: 25px;
   width: auto;
   padding: 2px 3px;
+  cursor: pointer;
 }
 body .container .container-box .start-game {
   left: 10%;
@@ -58,6 +72,8 @@ body .container .container-box .start-game {
 }
 body .container .container-box .start-game button {
   border: 1px solid transparent;
+  cursor: pointer;
+  background-color: transparent;
 }
 body .container .container-box .new-game {
   right: 10%;
@@ -67,6 +83,8 @@ body .container .container-box .new-game {
 }
 body .container .container-box .new-game button {
   border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
 }
 body .container .container-box .player {
   left: 45%;
@@ -86,22 +104,62 @@ body .container .container-box .container-inner-box .card-one, body .container .
   border-radius: 5px;
   height: 80%;
   width: 22%;
+  cursor: pointer;
 }
 body .container .container-box .container-inner-box .card {
   position: absolute;
   box-shadow: var(--box-shadow);
+  cursor: pointer;
 }
 body .container .container-box .container-inner-box .left-second {
   width: 15%;
   height: 20%;
-  border: 1px solid red;
   left: 5%;
+  top: 17%;
+}
+body .container .container-box .container-inner-box .left-third {
+  top: 48%;
+  width: 15%;
+  height: 20%;
+  left: 5%;
+}
+body .container .container-box .container-inner-box .right-second {
+  width: 15%;
+  height: 20%;
+  right: 5%;
+  top: 17%;
+}
+body .container .container-box .container-inner-box .right-third {
+  top: 48%;
+  width: 15%;
+  height: 20%;
+  right: 5%;
 }
 body .container .left, body .container .right {
   width: 50%;
   box-shadow: var(--box-shadow);
   margin: 10px 0;
   margin-left: 25%;
+  height: 10%;
+}
+body .container .start-the-game, body .container .restert-the-game {
+  width: 8%;
+  box-shadow: var(--box-shadow);
+  margin: 10px 0;
+  height: 15%;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  padding-top: 45px;
+  cursor: pointer;
+}
+body .container .start-the-game {
+  left: 28%;
+  cursor: pointer;
+}
+body .container .restert-the-game {
+  right: 28%;
+  z-index: 3;
 }
 
 @media only screen and (min-width: 1550px) {
@@ -218,5 +276,78 @@ body .container .left, body .container .right {
     transform: translateX(12px);
     height: 70%;
     width: 30%;
+  }
+}
+.two {
+  display: none;
+}
+
+.direction-one {
+  position: absolute;
+  top: 30%;
+}
+
+.direction-two {
+  position: absolute;
+  top: 20%;
+}
+
+.direction-three {
+  position: absolute;
+  top: 60%;
+}
+
+.random-cards {
+  position: absolute;
+  width: 80%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.random-cards .box-card {
+  width: 6.5%;
+  height: 80%;
+  margin: 0 5px;
+  box-shadow: var(--box-shadow);
+  -webkit-animation: box 0.15s 6 linear;
+          animation: box 0.15s 6 linear;
+  border-radius: 10px;
+  background-color: #f4f3ee;
+}
+.random-cards .box-card:hover {
+  transform: scale(1.02);
+}
+.random-cards .box-card button {
+  display: none;
+}
+@-webkit-keyframes box {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(75%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes box {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(75%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }/*# sourceMappingURL=index.css.map */
