@@ -1,6 +1,4 @@
-.two{
-    display: none;
-}
+
 .direction-one{
     position: absolute;
     top: 30%;
@@ -29,12 +27,17 @@
         box-shadow: var(--box-shadow);
         animation: box 0.15s 6 linear;
         border-radius: 10px;
-        background-color: #f4f3ee;
+        background-color: transparent;
+        cursor: pointer;
         &:hover{
             transform: scale(1.02);
         }
         button{
-            display: none;
+            height: 100%;
+            width: 100%;
+            border: 1px solid transparent;
+            background-color: transparent;
+            font-size: 50px;
         }
     }
     @keyframes box {
