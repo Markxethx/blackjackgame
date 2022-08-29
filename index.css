@@ -1,17 +1,14 @@
 :root {
-  --box-shadow: 7px 7px 15px #45566754,
-  8px -8px 15px #5165790a,
-   inset -5px -4px 13px 0px #51657959,
-   inset 6px 7px 12px 0px #fffffff0;
-  --inside-shadow:6px 6px 8px rgba(13, 39, 80, 0.25),
-  -6px -6px 10px #fff,
-  inset -8px -8px 12px rgba(255,255,255,0.7),
-  inset 5px 5px 8px rgba(13,39,80,0.2);
+  --box-shadow: 2px 2px 1px #45566754,
+  -8px -8px 15px #5165790a,
+   inset -5px -4px 13px #51657959,
+   inset 4px 4px 12px #ffa62b;
 }
 
 * {
   box-sizing: border-box;
   font-family: "Poker In October Demo";
+  color: #ffe8d6;
 }
 
 @font-face {
@@ -31,6 +28,10 @@ body {
   overflow: clip;
   font-family: "Roboto", sans-serif;
   letter-spacing: 1.5px;
+  background-image: url("stranger.jpg");
+  background-position: center;
+  size: cover;
+  z-index: 1;
 }
 body .container {
   display: flex;
@@ -49,7 +50,7 @@ body .container .container-box {
   box-shadow: var(--box-shadow);
   flex-direction: column;
   position: relative;
-  background-color: #f4f3ee;
+  background-color: transparent;
 }
 body .container .container-box .start-game button:hover, body .container .container-box .new-game button:hover {
   transform: scale(1.1);
@@ -104,7 +105,15 @@ body .container .container-box .container-inner-box .card-one, body .container .
   border-radius: 5px;
   height: 80%;
   width: 22%;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+}
+body .container .container-box .container-inner-box .card-one img, body .container .container-box .container-inner-box .card-two img {
+  height: 100%;
+  width: 100%;
 }
 body .container .container-box .container-inner-box .card {
   position: absolute;
@@ -142,6 +151,9 @@ body .container .left, body .container .right {
   margin-left: 25%;
   height: 10%;
 }
+body .container .right {
+  margin-bottom: 20px;
+}
 body .container .start-the-game, body .container .restert-the-game {
   width: 8%;
   box-shadow: var(--box-shadow);
@@ -152,6 +164,13 @@ body .container .start-the-game, body .container .restert-the-game {
   top: 40%;
   padding-top: 45px;
   cursor: pointer;
+}
+body .container .start-the-game a, body .container .restert-the-game a {
+  text-decoration: none;
+  color: #ffe8d6;
+}
+body .container .start-the-game:hover, body .container .restert-the-game:hover {
+  transform: scale(1.1);
 }
 body .container .start-the-game {
   left: 28%;
@@ -278,10 +297,6 @@ body .container .restert-the-game {
     width: 30%;
   }
 }
-.two {
-  display: none;
-}
-
 .direction-one {
   position: absolute;
   top: 30%;
@@ -315,13 +330,18 @@ body .container .restert-the-game {
   -webkit-animation: box 0.15s 6 linear;
           animation: box 0.15s 6 linear;
   border-radius: 10px;
-  background-color: #f4f3ee;
+  background-color: transparent;
+  cursor: pointer;
 }
 .random-cards .box-card:hover {
   transform: scale(1.02);
 }
 .random-cards .box-card button {
-  display: none;
+  height: 100%;
+  width: 100%;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 50px;
 }
 @-webkit-keyframes box {
   0% {
