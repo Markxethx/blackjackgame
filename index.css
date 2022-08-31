@@ -1,8 +1,12 @@
 :root {
   --box-shadow: 2px 2px 1px #45566754,
   -8px -8px 15px #5165790a,
-   inset -5px -4px 13px #51657959,
-   inset 4px 4px 12px #ffa62b;
+   inset -4px -4px 15px #eb5e28,
+   inset 4px 4px 10px #ffa62b;
+  --box-shadow-player: 2px 2px 1px #45566754,
+  -8px -8px 15px #5165790a,
+   inset -4px -4px 15px #3b3d50,
+   inset 4px 4px 10px #384a37;
 }
 
 * {
@@ -26,7 +30,6 @@ body {
   justify-content: center;
   text-align: center;
   overflow: clip;
-  font-family: "Roboto", sans-serif;
   letter-spacing: 1.5px;
   background-image: url("stranger.jpg");
   background-position: center;
@@ -51,6 +54,10 @@ body .container .container-box {
   flex-direction: column;
   position: relative;
   background-color: transparent;
+  border-radius: 10px;
+}
+body .container .container-box * {
+  border-radius: 5px;
 }
 body .container .container-box .start-game button:hover, body .container .container-box .new-game button:hover {
   transform: scale(1.1);
@@ -164,10 +171,6 @@ body .container .start-the-game, body .container .restert-the-game {
   top: 40%;
   padding-top: 45px;
   cursor: pointer;
-}
-body .container .start-the-game a, body .container .restert-the-game a {
-  text-decoration: none;
-  color: #ffe8d6;
 }
 body .container .start-the-game:hover, body .container .restert-the-game:hover {
   transform: scale(1.1);
@@ -297,6 +300,10 @@ body .container .restert-the-game {
     width: 30%;
   }
 }
+.two {
+  display: none;
+}
+
 .direction-one {
   position: absolute;
   top: 30%;
@@ -310,6 +317,14 @@ body .container .restert-the-game {
 .direction-three {
   position: absolute;
   top: 60%;
+}
+.direction-three button {
+  background-color: transparent;
+}
+.direction-three button a {
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
 }
 
 .random-cards {
