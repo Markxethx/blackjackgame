@@ -11,33 +11,52 @@
 <body>
     <body>
         <div class="container">
-            <div class="container-box">
+            <div class="up-container container-box">
                 <div class="container-inner-box">
                     <div class="card left-second"></div>
                     <div class="card left-third"></div>
-                    <div class="card-one"><img src="champ3.png"></div>
-                    <div class="card-two">🐘</div>
+                    <div class="card-one" id="card-one"></div>
+                    <div class="card-two"></div>
                     <div class="card right-second"></div>
                     <div class="card right-third"></div>
                 </div>
-                <p class="btn start-game"><button>Reveal Cards</button></p><p class="btn player">Player 1</p><p class="btn new-game"><button>+ Card</button></p>
+                <p class="btn start-game"><button onclick="cardOne()">Reveal Cards</button></p><p class="btn player">Player 1</p><p class="btn new-game"><button>+ Card</button></p>
             </div>
-            <div class="start-the-game"><a href="random-card.html">Start</a></div>
+            <div class="start-the-game"><button onclick="startGame()">Start</button></div>
             <div class="left">Arjayar</div>
             <h1>VS</h1>
             <div class="right">The Blank</div>
-            <div class="restert-the-game"><a href="index.html">Restart</a></div>
-            <div class="container-box">
+            <div class="restert-the-game">Restart</div>
+            <div class="bot-container container-box">
                 <div class="container-inner-box">
                     <div class="card left-second"></div>
                     <div class="card left-third"></div>
-                    <div class="card-one">🐉</div>
-                    <div class="card-two">🦍</div>
+                    <div class="card-one" onclick="cardOneTwo()"></div>
+                    <div class="card-two"></div>
                     <div class="card right-second"></div>
                     <div class="card right-third"></div>
                 </div>
                 <p class="btn start-game"><button>Reveal Cards</button></p><p class="btn player">Player 2</p><p class="btn new-game"><button>+ Card</button></p>
             </div>
+        </div>
+
+        <div class="two direction-one"><p>Each emoji has corresponding random numbers from 1-13!</p></div>
+        <div class="two direction-two"><h1>Create a random Emoji</h1></div>
+        <div class="two direction-three"><button onclick="backHome()"><a href="index.html">Proceed</a></button></div>
+        <div class="two random-cards">
+            <div class="two box-card"> <button id="box-card-1" onclick="card1()"></button></div>
+            <div class="two box-card"> <button id="box-card-2" onclick="card2()"></button></div>
+            <div class="two box-card"> <button id="box-card-3" onclick="card3()"></button></div>
+            <div class="two box-card"> <button id="box-card-4" onclick="card4()"></button></div>
+            <div class="two box-card"> <button id="box-card-5" onclick="card5()"></button></div>
+            <div class="two box-card"> <button id="box-card-6" onclick="card6()"></button></div>
+            <div class="two box-card"> <button id="box-card-7" onclick="card7()"></button></div>
+            <div class="two box-card"> <button id="box-card-8" onclick="card8()"></button></div>
+            <div class="two box-card"> <button id="box-card-9" onclick="card9()"></button></div>
+            <div class="two box-card"> <button id="box-card-10" onclick="card10()"></button></div>
+            <div class="two box-card"> <button id="box-card-11" onclick="card11()"></button></div>
+            <div class="two box-card"> <button id="box-card-12" onclick="card12()"></button></div>
+            <div class="two box-card"> <button id="box-card-13" onclick="card13()"></button></div>
         </div>
         <script src="index.js"></script>
 </body>
