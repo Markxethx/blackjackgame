@@ -7,9 +7,13 @@ $small-mobile: 321px;
 :root {
     --box-shadow: 2px 2px 1px #45566754,
     -8px -8px 15px #5165790a,
-     inset -5px -4px 13px #51657959,
-     inset 4px 4px 12px #ffa62b;
+     inset -4px -4px 15px #eb5e28,
+     inset 4px 4px 10px #ffa62b;
 
+     --box-shadow-player: 2px 2px 1px #45566754,
+     -8px -8px 15px #5165790a,
+      inset -4px -4px 15px #3b3d50,
+      inset 4px 4px 10px #384a37;
 
 }
 * {
@@ -32,7 +36,6 @@ body{
     justify-content: center;
     text-align: center;
     overflow: clip;
-    font-family: 'Roboto', sans-serif;
     letter-spacing: 1.5px;
     background-image: url('stranger.jpg');
     background-position: center;
@@ -55,6 +58,10 @@ body{
             flex-direction: column;
             position: relative;
             background-color: transparent;
+            border-radius: 10px;
+            * {
+                border-radius: 5px;
+            }
             .start-game button, .new-game button{
                 &:hover{
                     transform: scale(1.1);
@@ -102,6 +109,8 @@ body{
                 flex-direction: row;
                 height: 80%;
                 width: 100%;
+                text-align: center;
+                font-size: 10px;
                 .card-one, .card-two{
                     margin-right: 50px;
                     transform: translateX(25px);
@@ -129,24 +138,32 @@ body{
                     height: 20%;
                     left: 5%;
                     top: 17%;
+                    font-size: 15px;
+                    padding-top: 15px;
                 }
                 .left-third{
                     top: 48%;
                     width: 15%;
                     height: 20%;
                     left: 5%;
+                    font-size: 15px;
+                    padding-top: 15px;
                 }
                 .right-second{
                     width: 15%;
                     height: 20%;
                     right: 5%;
                     top: 17%;
+                    font-size: 15px;
+                    padding-top: 15px;
                 }
                 .right-third{
                     top: 48%;
                     width: 15%;
                     height: 20%;
                     right: 5%;
+                    font-size: 15px;
+                    padding-top: 15px;
                 }
             }
         }
@@ -160,7 +177,7 @@ body{
         .right {
             margin-bottom: 20px;
         }
-        .start-the-game, .restert-the-game{
+        .start-the-game, .restart-the-game{
                 width: 8%;
                 box-shadow: var(--box-shadow);
                 margin: 10px 0;
@@ -170,25 +187,151 @@ body{
                 top: 40%;
                 padding-top: 45px;
                 cursor: pointer;
-                a{
-                    text-decoration: none;
-                    color: #ffe8d6;
-                }
                 &:hover{
                     transform: scale(1.1);
                 }
         }
         .start-the-game{
             left: 28%;
+            z-index: 3;
             cursor: pointer;
         }
-        .restert-the-game{
+        .restart-the-game{
             right: 28%;
             z-index: 3;
         }
 
     }
+
+    .containerTwo{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        .direction-one{
+            position: absolute;
+            top: 30%;
+        }
+        .direction-two{
+            position: absolute;
+            top: 20%;
+        }
+        .direction-three{
+            position: absolute;
+            top: 60%;
+            button{
+                background-color: transparent;
+            }
+        }
+        .random-cards{
+            position: absolute;
+            width: 80%;
+            height: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            overflow: hidden;
+            flex-wrap: wrap;
+            .box-card{
+                width: 6.5%;
+                height: 80%;
+                margin: 0 5px;
+                box-shadow: var(--box-shadow);
+                animation: box 0.15s 6 linear;
+                border-radius: 10px;
+                background-color: transparent;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.02);
+                }
+                button{
+                    height: 100%;
+                    width: 100%;
+                    border: 1px solid transparent;
+                    background-color: transparent;
+                    font-size: 50px;
+                }
+            }
+            @keyframes box {
+                0% {
+                    transform: translateX(0%);
+                }
+                25% {
+                    transform: translateX(50%);
+                }
+                50% {
+                    transform: translateX(75%);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+        }
+    }
+}
+
+.containerThree{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    .direction-one{
+        position: absolute;
+        top: 30%;
+    }
+    .direction-two{
+        position: absolute;
+        top: 20%;
+    }
+    .direction-three{
+        position: absolute;
+        top: 60%;
+        button{
+            background-color: transparent;
+        }
+    }
+    .random-cards{
+        position: absolute;
+        width: 80%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        overflow: hidden;
+        flex-wrap: wrap;
+        .box-card{
+            width: 6.5%;
+            height: 80%;
+            margin: 0 5px;
+            box-shadow: var(--box-shadow);
+            animation: box 0.15s 6 linear;
+            border-radius: 10px;
+            background-color: transparent;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.02);
+            }
+            button{
+                height: 100%;
+                width: 100%;
+                border: 1px solid transparent;
+                background-color: transparent;
+                font-size: 50px;
+            }
+        }
+        @keyframes box {
+            0% {
+                transform: translateX(0%);
+            }
+            25% {
+                transform: translateX(50%);
+            }
+            50% {
+                transform: translateX(75%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    }
 }
 
 @import './breakpoints' ;
-@import './random-cards';
