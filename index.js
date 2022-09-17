@@ -11,104 +11,333 @@ let chooseCard10 = document.getElementById('box-card-10')
 let chooseCard11 = document.getElementById('box-card-11')
 let chooseCard12 = document.getElementById('box-card-12')
 let chooseCard13 = document.getElementById('box-card-13')
-let revealCard = document.getElementById('card-one')
-cards = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸"]
-let randomEmojiChamp = [memoryCard1, "memoryCard2", "memoryCard3", "memoryCard4", "memoryCard5", "memoryCard6", "memoryCard7", "memoryCard8", "memoryCard9", "memoryCard10", "memoryCard11", "memoryCard12", "memoryCard13" ]
 
-    if (function card1(){
-        randomEmoji = Math.floor(Math.random() * 13) + 1
-        chooseCard1.textContent = cards[randomEmoji]
-    }) {
-        chooseCard1.textContent = cards[randomEmoji]
-    } else if  (function card2(){
-        randomEmoji = Math.floor(Math.random() * 13) + 1
-        chooseCard2.textContent = cards[randomEmoji]
-        memoryCard2= cards[randomEmoji] 
-    }){
-        return cards[randomEmoji]
-    } else if (
-    function card3(){
-        randomEmoji = Math.floor(Math.random() * 13) + 1
-        chooseCard3.textContent = cards[randomEmoji]
-        memoryCard3 = cards[randomEmoji] 
-    }) {
-        return cards[randomEmoji] 
-    } else if (
-    function card4(){
-        randomEmoji = Math.floor(Math.random() * 13) + 1
-        chooseCard4.textContent = cards[randomEmoji]
-        memoryCard4 = cards[randomEmoji] 
-    }) {
-        return cards[randomEmoji] 
-    } else if (
-    function card5(){
-        randomEmoji = Math.floor(Math.random() * 13) + 1
-        chooseCard5.textContent = cards[randomEmoji]
-        memoryCard5 = cards[randomEmoji] 
-    }) {
-        return cards[randomEmoji] 
-    } else if (
-    function card6(){
-        randomEmoji = Math.floor(Math.random() * 13) + 1
-        chooseCard6.textContent = cards[randomEmoji]
-        memoryCard6 = cards[randomEmoji] 
-    }) {
-        return cards[randomEmoji] 
-    } else if (
-    function card7(){
-        randomEmoji = Math.floor(Math.random() * 13) + 1
-        chooseCard7.textContent = cards[randomEmoji]
-        memoryCard7 = cards[randomEmoji] 
-    }) {
-        return cards[randomEmoji] 
-    } else if (
-    function card8(){
-        randomEmoji = Math.floor(Math.random() * 13) + 1
-        chooseCard8.textContent = cards[randomEmoji]
-        memoryCard8 = cards[randomEmoji] 
-    }) {
-        return cards[randomEmoji] 
-    } else if (
-    function card9(){
-        randomEmoji = Math.floor(Math.random() * 13) + 1
-        chooseCard9.textContent = cards[randomEmoji]
-        memoryCard9 = cards[randomEmoji] 
-    }) {
-        return cards[randomEmoji] 
-    } else if (
-    function card10(){
-        randomEmoji = Math.floor(Math.random() * 13) + 1
-        chooseCard10.textContent = cards[randomEmoji]
-        memoryCard10 = cards[randomEmoji]
-    }) {
-        return cards[randomEmoji] 
-    } else if (
-    function card11(){
-        randomEmoji = Math.floor(Math.random() * 13) + 1
-        chooseCard11.textContent = cards[randomEmoji]
-        memoryCard11 = cards[randomEmoji]
-    }) {
-        return cards[randomEmoji]
-    } else if (
-    function card12(){
-        randomEmoji = Math.floor(Math.random() * 13) + 1
-        chooseCard12.textContent = cards[randomEmoji]
-        memoryCard12 = cards[randomEmoji]
-    }) {
-        return cards[randomEmoji] 
-    } else if (
-    function card13(){
-        randomEmoji = Math.floor(Math.random() * 13) + 1
-        chooseCard13.textContent = cards[randomEmoji]
-        memoryCard13 = cards[randomEmoji]
-    }) {
-        return cards[randomEmoji] 
-    } else {
-        return "N/A"
-    }
-    
-    function cardOne() {
-        randomEmoji = Math.floor(Math.random() * 13) + 1
-        revealCard.textContent = card1()
-    }
+let chooseCard21 = document.getElementById('box-card-21')
+let chooseCard22 = document.getElementById('box-card-22')
+let chooseCard23 = document.getElementById('box-card-23')
+let chooseCard24 = document.getElementById('box-card-24')
+let chooseCard25 = document.getElementById('box-card-25')
+let chooseCard26 = document.getElementById('box-card-26')
+let chooseCard27 = document.getElementById('box-card-27')
+let chooseCard28 = document.getElementById('box-card-28')
+let chooseCard29 = document.getElementById('box-card-29')
+let chooseCard210 = document.getElementById('box-card-210')
+let chooseCard211 = document.getElementById('box-card-211')
+let chooseCard212 = document.getElementById('box-card-212')
+let chooseCard213 = document.getElementById('box-card-213')
+
+leftFirstBox1 = document.querySelector('#left-second1');
+leftFirstBox2 = document.querySelector('#left-third1');
+rightFirstBox1 = document.querySelector('#right-second1');
+rightFirstBox2 = document.querySelector('#right-third1');
+leftSecondBox1 = document.querySelector('#left-second2');
+leftSecondBox2 = document.querySelector('#left-third2');
+rightSecondBox1 = document.querySelector('#right-second2');
+rightSecondBox2 = document.querySelector('#right-third2');
+let revealCard = document.querySelector('#card-one')
+
+
+const x = document.getElementById('container');
+const y = document.querySelector('.containerTwo');
+const z = document.querySelector('.containerThree');
+
+var firstCardOne = document.getElementById("firstCardOne")
+function randomEmoji() {
+    random = Math.floor(Math.random() *5) + 1;
+    return random
+}
+
+
+function startTheGame(){
+     /* firstCardOne.textContent = cards[randomEmoji()] */
+     x.style.display = "none";
+     y.style.display = "flex";
+}
+function backHomeOne() {
+    y.style.display = "none";
+    document.querySelector('.startTheGame').style.display = 'none';
+    document.querySelector('.restartTheGame').style.display = 'none';
+    document.querySelector('.plusCard1').style.display = 'none';
+    document.querySelector('.plusCard2').style.display = 'none';
+    document.querySelector('.player1').style.display = 'none';
+    document.querySelector('.player2').style.display = 'none';
+    document.querySelector('.containerThree').style.display = 'flex';
+}
+function backHomeTwo() {
+    x.style.display = "flex";
+    y.style.display = "none";
+    z.style.display = 'none';
+    document.querySelector('.startTheGame').style.display = 'none';
+    document.querySelector('.restartTheGame').style.display = 'none';
+    document.querySelector('.plusCard1').style.display = 'none';
+    document.querySelector('.plusCard2').style.display = 'none';
+    document.querySelector('.player1').style.display = 'none';
+    document.querySelector('.player2').style.display = 'none';
+}
+
+randomCards = document.querySelectorAll('.box111');
+randomCards.forEach(function(box){
+    box.addEventListener('click', function(e){
+        const styles = e.currentTarget.classList;
+        let cards1 =["🐉", "🐥", "🐊","💩", "🦍"];
+        let cards2 =["🐢", "🐩", "🦭", "🦀", "🐝"];
+        let cards3 =["🤖", "🐘", "🐸", "🕷","🐆"];
+        let cards4 = ["🦕", "🦁", "💰", "💯", "📢"];
+        let cards5 = ["📹", "🔄", "🔅", "🔎", "🔌"];
+        let cards6 = ["🔑", "🔒", "🔓", "🔟", "🔪"];
+        let cards7 = ['🔫', "🔱", "🔴", "🕌", "🕔"];
+        let cards8 = ['🕸', "🗣", "🗼", "😈", "😓"];
+        let cards9 = ["😕", "😡", "😭", "🙃", "🚩"];
+        let cards10 = ["🚮", "🚽", "🛸", "🤑", "🤡"];
+        let cards11 = ["🤢", "🤧", "🤬", "🤧", "🤮"];
+        let cards12 = ["🤶", "🥒", "🥝", "🥣", "🦉"];
+        let cards13 = ["🦊", "🦋", "🦌", "🦐", "🦔"];
+
+        if(styles.contains('box1')){
+            cardOne1 =  cards1[randomEmoji()];
+            chooseCard1.textContent = cardOne1;
+            return cardOne1;
+        } else if (styles.contains('box2')){
+            cardOne2 =  cards2[randomEmoji()];
+            chooseCard2.textContent = cardOne2;
+            return cardOne2;
+        } else if (styles.contains('box3')){
+            cardOne3 =  cards3[randomEmoji()];
+            chooseCard3.textContent = cardOne3;
+            return cardOne3;
+        } else if (styles.contains('box4')){
+            cardOne4 =  cards4[randomEmoji()];
+            chooseCard4.textContent = cardOne4;
+            return cardOne4;
+        } else if (styles.contains('box5')){
+            cardOne5 =  cards5[randomEmoji()];
+            chooseCard5.textContent = cardOne5;
+            return cardOne5;
+        } else if (styles.contains('box6')){
+            cardOne6 =  cards6[randomEmoji()];
+            chooseCard6.textContent = cardOne6;
+            return cardOne6;
+        } else if (styles.contains('box7')){
+            cardOne7 =  cards7[randomEmoji()];
+            chooseCard7.textContent = cardOne7;
+            return cardOne7;
+        } else if (styles.contains('box8')){
+            cardOne8 =  cards8[randomEmoji()];
+            chooseCard8.textContent = cardOne8;
+            return cardOne8;
+        } else if (styles.contains('box9')){
+            cardOne9 =  cards9[randomEmoji()];
+            chooseCard9.textContent = cardOne9;
+            return cardOne9;
+        } else if (styles.contains('box10')){
+            cardOne10 =  cards10[randomEmoji()];
+            chooseCard10.textContent = cardOne10;
+            return cardOne10;
+        } else if (styles.contains('box11')){
+            cardOne11 =  cards11[randomEmoji()];
+            chooseCard11.textContent = cardOne11;
+            return cardOne11;
+        } else if (styles.contains('box12')){
+            cardOne12 =  cards12[randomEmoji()];
+            chooseCard12.textContent = cardOne12;
+            return cardOne12;
+        } else{
+            cardOne13 =  cards13[randomEmoji()];
+            chooseCard13.textContent = cardOne13;
+            return cardOne13;
+        }
+    });
+});
+
+revealOne = document.querySelector('.revealOne')
+revealOne.addEventListener('click', function() {
+        a = cardOne1;
+        b = cardOne2;
+        c = cardOne3;
+        d = cardOne4;
+        e = cardOne5;
+        f = cardOne6;
+        g = cardOne7;
+        h = cardOne8;
+        i = cardOne9;
+        j = cardOne10;
+        k = cardOne11;
+        l = cardOne12;
+        m = cardOne13;
+
+        let randomCardsReveal = [a, b, c, d, e, f, g, h, i, j, k, l, m];
+        randomEmojiCard = Math.floor(Math.random() *13);
+        document.querySelector('.plusCard1').style.display = 'block';
+        document.querySelector('.cardOne1').textContent = randomCardsReveal[randomEmojiCard];
+        revealOne.style.display = 'none';
+        document.querySelector('#left-second1').textContent= "Power";
+        document.querySelector('#left-third1').textContent = "Weakness";
+
+});
+
+plusCard1 = document.querySelector('.plusCard1')
+plusCard1.addEventListener('click', function(){
+
+    a = cardOne1;
+    b = cardOne2;
+    c = cardOne3;
+    d = cardOne4;
+    e = cardOne5;
+    f = cardOne6;
+    g = cardOne7;
+    h = cardOne8;
+    i = cardOne9;
+    j = cardOne10;
+    k = cardOne11;
+    l = cardOne12;
+    m = cardOne13;
+
+    let randomCardsReveal = [a, b, c, d, e, f, g, h, i, j, k, l, m];
+    randomEmojiCard = Math.floor(Math.random() *13);
+
+    document.querySelector('.plusCard1').style.display = 'block';
+    document.querySelector('.cardOne2').textContent = randomCardsReveal[randomEmojiCard];
+    plusCard1.style.display = 'none';
+    document.querySelector('#right-second1').textContent= "Power";
+    document.querySelector('#right-third1').textContent = "Weakness";
+});
+
+
+randomCards = document.querySelectorAll('.box222');
+randomCards.forEach(function(boxes){
+    boxes.addEventListener('click', function(e){
+        const styles = e.currentTarget.classList;
+        let cards21 =["🐉", "🐥", "🐊","💩", "🦍"];
+        let cards22 =["🐢", "🐩", "🦭", "🦀", "🐝"];
+        let cards23 =["🤖", "🐘", "🐸", "🕷","🐆"];
+        let cards24 = ["🦕", "🦁", "💰", "💯", "📢"];
+        let cards25 = ["📹", "🔄", "🔅", "🔎", "🔌"];
+        let cards26 = ["🔑", "🔒", "🔓", "🔟", "🔪"];
+        let cards27 = ['🔫', "🔱", "🔴", "🕌", "🕔"];
+        let cards28 = ['🕸', "🗣", "🗼", "😈", "😓"];
+        let cards29 = ["😕", "😡", "😭", "🙃", "🚩"];
+        let cards210 = ["🚮", "🚽", "🛸", "🤑", "🤡"];
+        let cards211 = ["🤢", "🤧", "🤬", "🤧", "🤮"];
+        let cards212 = ["🤶", "🥒", "🥝", "🥣", "🦉"];
+        let cards213 = ["🦊", "🦋", "🦌", "🦐", "🦔"];
+
+        if(styles.contains('box21')){
+            cardOne21 =  cards21[randomEmoji()];
+            chooseCard21.textContent = cardOne21;
+            return cardOne21;
+        } else if (styles.contains('box22')){
+            cardOne22 =  cards22[randomEmoji()];
+            chooseCard22.textContent = cardOne22;
+            return cardOne22;
+        } else if (styles.contains('box23')){
+            cardOne23 =  cards23[randomEmoji()];
+            chooseCard23.textContent = cardOne23;
+            return cardOne23;
+        } else if (styles.contains('box24')){
+            cardOne24 =  cards24[randomEmoji()];
+            chooseCard24.textContent = cardOne24;
+            return cardOne24;
+        } else if (styles.contains('box25')){
+            cardOne25 =  cards25[randomEmoji()];
+            chooseCard25.textContent = cardOne25;
+            return cardOne25;
+        } else if (styles.contains('box26')){
+            cardOne26 =  cards26[randomEmoji()];
+            chooseCard26.textContent = cardOne26;
+            return cardOne26;
+        } else if (styles.contains('box27')){
+            cardOne27 =  cards27[randomEmoji()];
+            chooseCard27.textContent = cardOne27;
+            return cardOne27;
+        } else if (styles.contains('box28')){
+            cardOne28 =  cards28[randomEmoji()];
+            chooseCard28.textContent = cardOne28;
+            return cardOne28;
+        } else if (styles.contains('box29')){
+            cardOne29 =  cards29[randomEmoji()];
+            chooseCard29.textContent = cardOne29;
+            return cardOne29;
+        } else if (styles.contains('box210')){
+            cardOne210 =  cards210[randomEmoji()];
+            chooseCard210.textContent = cardOne210;
+            return cardOne210;
+        } else if (styles.contains('box211')){
+            cardOne211 =  cards211[randomEmoji()];
+            chooseCard211.textContent = cardOne211;
+            return cardOne211;
+        } else if (styles.contains('box212')){
+            cardOne212 =  cards212[randomEmoji()];
+            chooseCard212.textContent = cardOne212;
+            return cardOne212;
+        } else{
+            cardOne213 =  cards213[randomEmoji()];
+            chooseCard213.textContent = cardOne213;
+            return cardOne213;
+        }
+    });
+});
+
+revealTwo = document.querySelector('.revealTwo')
+revealTwo.addEventListener('click', function() {
+        aa = cardOne21;
+        ba = cardOne22;
+        ca = cardOne23;
+        da = cardOne24;
+        ea = cardOne25;
+        fa = cardOne26;
+        ga = cardOne27;
+        ha = cardOne28;
+        ia = cardOne29;
+        ja = cardOne210;
+        ka = cardOne211;
+        la = cardOne212;
+        ma = cardOne213;
+
+        let randomCardsReveal = [aa, ba, ca, da, ea, fa, ga, ha, ia, ja, ka, la, ma];
+        randomEmojiCard = Math.floor(Math.random() *13);
+        document.querySelector('.plusCard2').style.display = 'block';
+        document.querySelector('.cardTwo1').textContent = aa;
+        revealTwo.style.display = 'none';
+        document.querySelector('#left-second2').textContent= "Power";
+        document.querySelector('#left-third2').textContent = "Weakness";
+
+        if (aa === "🐉") {
+            console.log('snake')
+        } else if (aa === "🐥") {
+            console.log("duck")
+        } else if ( aa ==="🐊") {
+            console.log('crocodile')
+        } else if (aa === "💩") {
+            console.log("tae")
+        } else {
+            console.log('unggoy')
+        }
+});
+
+plusCard2 = document.querySelector('.plusCard2')
+plusCard2.addEventListener('click', function(){
+
+    aa = cardOne21;
+    ba = cardOne22;
+    ca = cardOne23;
+    da = cardOne24;
+    ea = cardOne25;
+    fa = cardOne26;
+    ga = cardOne27;
+    ha = cardOne28;
+    ia = cardOne29;
+    ja = cardOne210;
+    ka = cardOne211;
+    la = cardOne212;
+    ma = cardOne213;
+
+    let randomCardsReveal = [aa, ba, ca, da, ea, fa, ga, ha, ia, ja, ka, la, ma];
+    randomEmojiCard = Math.floor(Math.random() *13);
+
+    document.querySelector('.plusCard2').style.display = 'block';
+    document.querySelector('.cardTwo2').textContent = randomCardsReveal[randomEmojiCard];
+    plusCard2.style.display = 'none';
+    document.querySelector('#right-second2').textContent= "Power";
+    document.querySelector('#right-third2').textContent = "Weakness";
+});
 
