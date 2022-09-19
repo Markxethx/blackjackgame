@@ -173,7 +173,7 @@ body{
                     padding-top: 15px;
                     background-color: rgba(204, 81, 15, 0.034);  
                     backdrop-filter: blur(5px);
-                    display: none;
+                    display: none !important;
                 }
                 .leftPower2, .leftWeakness2, .rightPower2, .rightWeakness2{
                     position: absolute;
@@ -184,10 +184,14 @@ body{
                     padding-top: 15px;
                     background-color: rgba(204, 81, 15, 0.034);  
                     backdrop-filter: blur(5px);
-                    display: none;
+                    display: none !important;
                 }
                 .leftPower1 {
                     left: 5%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
                     .leftPowerIcon1{
                         position: absolute;
                         font-size: 15px;
@@ -197,22 +201,25 @@ body{
                         z-index: 3;
                     }
                     .leftPowerEmoji1 {
-                        top: 0%;
-                        height: 90%;
+                        text-align: center;
                         width: 30%;
-                        font-size: 3rem;
+                        height: 90%;
+                        z-index: 3;
                     }
                     .leftPowerComment1 {
-                        left: 30%;
-                        height: 82%;
-                        width: 60%;
-                        top: 8%;
-                        position: absolute;
+                        text-align: center;
+                        width: 65%;
+                        height: 90%;
+                        z-index: 3;
                     }
                 }
                 .leftPower2 {
 
                     left: 5%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
                     .leftPowerIcon2{
                         position: absolute;
                         font-size: 15px;
@@ -222,22 +229,23 @@ body{
                         z-index: 3;
                     }
                     .leftPowerEmoji2 {
-                        top: 0%;
-                        height: 90%;
+                        text-align: center;
                         width: 30%;
-                        font-size: 3rem;
+                        height: 90%;
                     }
                     .leftPowerComment2 {
-                        left: 30%;
-                        height: 82%;
-                        width: 60%;
-                        top: 8%;
-                        position: absolute;
+                        text-align: center;
+                        width: 65%;
+                        height: 90%;
                     }
                 }
                 .leftWeakness1{
 
                     left: 5%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
                     .leftWeaknessIcon1{
                         position: absolute;
                         font-size: 15px;
@@ -247,22 +255,23 @@ body{
                         z-index: 3;
                     }
                     .leftWeaknessEmoji1 {
-                        top: 0%;
-                        height: 90%;
+                        text-align: center;
                         width: 30%;
-                        font-size: 3rem;
+                        height: 90%;
                     }
                     .lefWeaknessComment1 {
-                        left: 30%;
-                        height: 82%;
-                        width: 60%;
-                        top: 8%;
-                        position: absolute;
+                        text-align: center;
+                        width: 65%;
+                        height: 90%;
                     }
                 }
                 .leftWeakness2{
 
                     left: 5%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
                     .leftWeaknessIcon2{
                         position: absolute;
                         font-size: 15px;
@@ -272,21 +281,21 @@ body{
                         z-index: 3;
                     }
                     .leftWeaknessEmoji2 {
-                        top: 0%;
-                        height: 90%;
+                        text-align: center;
                         width: 30%;
-                        font-size: 3rem;
+                        height: 90%;
                     }
                     .lefWeaknessComment2 {
-                        left: 30%;
-                        height: 82%;
-                        width: 60%;
-                        top: 8%;
-                        position: absolute;
+                        text-align: center;
+                        width: 65%;
+                        height: 90%;
                     }
                 }
                 .rightPower1 {
-
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
                     right: 5%;
                     .rightPowerIcon1{
                         position: absolute;
@@ -297,21 +306,21 @@ body{
                         z-index: 3;
                     }
                     .rightPowerEmoji1 {
-                        top: 0%;
-                        height: 90%;
+                        text-align: center;
                         width: 30%;
-                        font-size: 3rem;
+                        height: 90%;
                     }
                     .rightPowerComment1 {
-                        left: 30%;
-                        height: 82%;
-                        width: 60%;
-                        top: 8%;
-                        position: absolute;
+                        text-align: center;
+                        width: 65%;
+                        height: 90%;
                     }
                 }
                 .rightPower2 {
-
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
                     right: 5%;
                     .rightPowerIcon2{
                         position: absolute;
@@ -322,22 +331,22 @@ body{
                         z-index: 3;
                     }
                     .rightPowerEmoji2 {
-                        top: 0%;
-                        height: 90%;
+                        text-align: center;
                         width: 30%;
-                        font-size: 3rem;
+                        height: 90%;
                     }
                     .rightPowerComment2 {
-                        left: 30%;
-                        height: 82%;
-                        width: 60%;
-                        top: 8%;
-                        position: absolute;
+                        text-align: center;
+                        width: 65%;
+                        height: 90%;
                     }
                 }
                 .rightWeakness1{
-
                     right: 5%;
+                     display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
                     .rightWeaknessIcon1{
                         position: absolute;
                         font-size: 15px;
@@ -347,21 +356,21 @@ body{
                         z-index: 3;
                     }
                     .rightWeaknessEmoji1 {
-                        top: 0%;
-                        height: 90%;
+                        text-align: center;
                         width: 30%;
-                        font-size: 3rem;
+                        height: 90%;
                     }
                     .rightWeaknessComment1 {
-                        left: 30%;
-                        height: 82%;
-                        width: 60%;
-                        top: 8%;
-                        position: absolute;
+                        text-align: center;
+                        width: 65%;
+                        height: 90%;
                     }
                 }
                 .rightWeakness2{
-
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
                     right: 5%;
                     .rightWeaknessIcon2{
                         position: absolute;
@@ -372,17 +381,16 @@ body{
                         z-index: 3;
                     }
                     .rightWeaknessEmoji2 {
-                        top: 0%;
-                        height: 90%;
+                        text-align: center;
                         width: 30%;
-                        font-size: 3rem;
+                        height: 90%;
+
                     }
                     .rightWeaknessComment2 {
-                        left: 30%;
-                        height: 82%;
-                        width: 60%;
-                        top: 8%;
-                        position: absolute;
+                        text-align: center;
+                        width: 65%;
+                        height: 90%;
+
                     }
                 }
             }
