@@ -175,6 +175,7 @@ revealOne.addEventListener('click', function() {
         m = cardOne13;
 
         let randomCardsReveal = [a, b, c, d, e, f, g, h, i, j, k, l, m];
+        let randomCardsReveal2 = [a, b, c, d, e, f, g, h, i, j, k, l, m];
         randomEmojiCard = Math.floor(Math.random() *13);
         document.querySelector('.plusCard1').style.display = 'block';
         document.querySelector('.cardOne1').textContent = randomCardsReveal[randomEmojiCard];
@@ -790,6 +791,386 @@ plusCard1.addEventListener('click', function(){
     document.querySelector('#right-third1').textContent = "Weakness";
     document.querySelector('#right-second1').style.display = 'block';
     document.querySelector('#right-third1').style.display = 'block';
+
+    
+        if (randomCardsReveal[randomEmojiCard] === "🦇") {
+            document.querySelector('.rightPowerEmoji1').textContent = "🦇"
+            document.querySelector('.rightPowerComment1').textContent = "Yes Walang pasok may covid +10 POINTS"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🦇"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🐥") {
+            document.querySelector('.rightPowerEmoji1').textContent = "🐥"
+            document.querySelector('.rightPowerComment1').textContent = "Napanalunan mo kay tatay  +20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🐥"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] ==="🐊") {
+            document.querySelector('.rightPowerEmoji1').textContent = "🐊"
+            document.querySelector('.rightPowerComment1').textContent = "Alaga mo +25 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🐊"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "💩") {
+            document.querySe
+            document.querySelector('.rightPowerEmoji1').textContent = "💩"
+            document.querySelector('.rightPowerComment1').textContent = "Hindi mo natapakan +10 points, blessing!"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "💩"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🦍") {
+
+            document.querySelector('.rightPowerEmoji1').textContent = "🦍"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo +20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🦍"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🐢") {
+    
+            document.querySelector('.rightPowerEmoji1').textContent = "🐢"
+            document.querySelector('.rightPowerComment1').textContent = "Trust the process + 30"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🐢"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🐩") {
+
+            document.querySelector('.rightPowerEmoji1').textContent = "🐩"
+            document.querySelector('.rightPowerComment1').textContent = "Puppy Love +20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🐩"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🦭"){
+            document.querySelector('.rightPowerEmoji1').textContent = "🦭"
+            document.querySelector('.rightPowerComment1').textContent = "Nakipaglaro ka +20"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🦭"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🦀") {
+        
+            document.querySelector('.rightPowerEmoji1').textContent = "🦀"
+            document.querySelector('.rightPowerComment1').textContent = "Naninipit ng bayag + 20"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🦀"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🐝") {
+        
+            document.querySelector('.rightPowerEmoji1').textContent = "🐝"
+            document.querySelector('.rightPowerComment1').textContent = "Masarap kasi honney +20"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🐝"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🤖"){
+            document.querySelector('.rightPowerEmoji1').textContent = "🤖"
+            document.querySelector('.rightPowerComment1').textContent = "Thank you AI +25"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🤖"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🐘"){
+            document.querySelector('.rightPowerEmoji1').textContent = "🐘"
+            document.querySelector('.rightPowerComment1').textContent = "Friendly + 20"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🐘"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🐸"){
+            document.querySelector('.rightPowerEmoji1').textContent = "🐸"
+            document.querySelector('.rightPowerComment1').textContent = "Froggy"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🐸"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🕷") {
+
+            document.querySelector('.rightPowerEmoji1').textContent = "🕷"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🕷"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🐆") {
+
+            document.querySelector('.rightPowerEmoji1').textContent = "🐆"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🐆"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🦕") {
+
+            document.querySelector('.rightPowerEmoji1').textContent = "🦕"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🦕"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🦁") {
+
+            document.querySelector('.rightPowerEmoji1').textContent = "🦁"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🦁"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "💰") {
+
+            document.querySelector('.rightPowerEmoji1').textContent = "💰"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "💰"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "💯") {
+
+            document.querySelector('.rightPowerEmoji1').textContent = "💯"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "💯"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "📢") {
+
+            document.querySelector('.rightPowerEmoji1').textContent = "📢"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "📢"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "📹") {
+
+            document.querySelector('.rightPowerEmoji1').textContent = "📹"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "📹"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🔄") {
+
+            document.querySelector('.rightPowerEmoji1').textContent = "🔄"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🔄"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🔅") {
+
+            document.querySelector('.rightPowerEmoji1').textContent = "🔅"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🔅"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🔎") {
+
+            document.querySelector('.rightPowerEmoji1').textContent = "🔎"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🔎"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🔌") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🔌"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🔌"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🔑") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🔑"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🔑"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🔒") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🔒"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🔒"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🔓") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🔓"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🔓"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🔟") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🔟"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🔟"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🔪") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🔪"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🔪"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === '🔫') {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🔫"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🔫"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🔱") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🔱"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🔱"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🔴") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🔴"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🔴"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🕌") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🕌"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🕌"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🕔") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🕔"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🕔"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === '🕸') {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🕸"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🕸"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🗣") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🗣"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🗣"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🗼") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🗼"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🗼"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "😈") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "😈"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "😈"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "😓") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "😓"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "😓"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "😕") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "😕"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "😕"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "😡") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "😡"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "😡"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "😭") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "😭"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "😭"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🙃") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🙃"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🙃"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🚩") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🚩"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🚩"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🚮") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🚮"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🚮"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🚽") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🚽"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🚽"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🛸") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🛸"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🛸"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🤑") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🤑"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🤑"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🤡") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🤡"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🤡"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🤢") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🤢"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🤢"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🤧") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🤧"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🤧"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🤬") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🤬"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🤬"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🤧") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🤧"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🤧"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🤮") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🤮"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🤮"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🤶") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🤶"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🤶"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🥒") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🥒"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🥒"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🥝") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🥝"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🥝"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🥣") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🥣"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🥣"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🦉") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🦉"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🦉"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🦊") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🦊"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🦊"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🦋") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🦋"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🦋"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🦌") {
+            
+            document.querySelector('.rightPowerEmoji1').textContent = "🦌"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🦌"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        } else if (randomCardsReveal[randomEmojiCard] === "🦔") {
+
+            document.querySelector('.rightPowerEmoji1').textContent = "🦔"
+            document.querySelector('.rightPowerComment1').textContent = "Kamukha mo -20 points"
+            document.querySelector('.rightWeaknessEmoji1').textContent = "🦔"
+            document.querySelector('.rightWeaknessComment1').textContent = "3 years may covid wtf -10 POINTS"
+        }
 });
 
 
@@ -944,35 +1325,35 @@ let rightPower2 = document.querySelector('#right-second2');
 let rightWeakness2 = document.querySelector('#right-third2');
 
 leftPower1.addEventListener('click', function() {
-    document.querySelector('.leftPower1').style.display = 'block';
+    document.querySelector('.leftPower1').style.display = 'flex';
 });
 
 leftWeakness1.addEventListener('click', function() {
-    document.querySelector('.leftWeakness1').style.display = 'block';
+    document.querySelector('.leftWeakness1').style.display = 'flex';
 });
 
 rightPower1.addEventListener('click', function() {
-    document.querySelector('.rightPower1').style.display = 'block';
+    document.querySelector('.rightPower1').style.display = 'flex';
 });
 
 rightWeakness1.addEventListener('click', function() {
-    document.querySelector('.rightWeakness1').style.display = 'block';
+    document.querySelector('.rightWeakness1').style.display = 'flex';
 });
 
 leftPower2.addEventListener('click', function() {
-    document.querySelector('.leftPower2').style.display = 'block';
+    document.querySelector('.leftPower2').style.display = 'flex';
 });
 
 leftWeakness2.addEventListener('click', function() {
-    document.querySelector('.leftWeakness2').style.display = 'block';
+    document.querySelector('.leftWeakness2').style.display = 'flex';
 });
 
 rightPower2.addEventListener('click', function() {
-    document.querySelector('.rightPower2').style.display = 'block';
+    document.querySelector('.rightPower2').style.display = 'flex';
 });
 
 rightWeakness2.addEventListener('click', function() {
-    document.querySelector('.rightWeakness2').style.display = 'block';
+    document.querySelector('.rightWeakness2').style.display = 'flex';
 });
 
 const ex = document.querySelectorAll('.eks');
