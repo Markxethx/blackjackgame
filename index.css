@@ -170,7 +170,7 @@ body .container .container-box .container-inner-box .leftPower1, body .container
   background-color: rgba(204, 81, 15, 0.034);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  display: none;
+  display: none !important;
 }
 body .container .container-box .container-inner-box .leftPower2, body .container .container-box .container-inner-box .leftWeakness2, body .container .container-box .container-inner-box .rightPower2, body .container .container-box .container-inner-box .rightWeakness2 {
   position: absolute;
@@ -182,10 +182,14 @@ body .container .container-box .container-inner-box .leftPower2, body .container
   background-color: rgba(204, 81, 15, 0.034);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  display: none;
+  display: none !important;
 }
 body .container .container-box .container-inner-box .leftPower1 {
   left: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 body .container .container-box .container-inner-box .leftPower1 .leftPowerIcon1 {
   position: absolute;
@@ -196,20 +200,23 @@ body .container .container-box .container-inner-box .leftPower1 .leftPowerIcon1 
   z-index: 3;
 }
 body .container .container-box .container-inner-box .leftPower1 .leftPowerEmoji1 {
-  top: 0%;
-  height: 90%;
+  text-align: center;
   width: 30%;
-  font-size: 3rem;
+  height: 90%;
+  z-index: 3;
 }
 body .container .container-box .container-inner-box .leftPower1 .leftPowerComment1 {
-  left: 30%;
-  height: 82%;
-  width: 60%;
-  top: 8%;
-  position: absolute;
+  text-align: center;
+  width: 65%;
+  height: 90%;
+  z-index: 3;
 }
 body .container .container-box .container-inner-box .leftPower2 {
   left: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 body .container .container-box .container-inner-box .leftPower2 .leftPowerIcon2 {
   position: absolute;
@@ -220,20 +227,21 @@ body .container .container-box .container-inner-box .leftPower2 .leftPowerIcon2 
   z-index: 3;
 }
 body .container .container-box .container-inner-box .leftPower2 .leftPowerEmoji2 {
-  top: 0%;
-  height: 90%;
+  text-align: center;
   width: 30%;
-  font-size: 3rem;
+  height: 90%;
 }
 body .container .container-box .container-inner-box .leftPower2 .leftPowerComment2 {
-  left: 30%;
-  height: 82%;
-  width: 60%;
-  top: 8%;
-  position: absolute;
+  text-align: center;
+  width: 65%;
+  height: 90%;
 }
 body .container .container-box .container-inner-box .leftWeakness1 {
   left: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 body .container .container-box .container-inner-box .leftWeakness1 .leftWeaknessIcon1 {
   position: absolute;
@@ -244,20 +252,21 @@ body .container .container-box .container-inner-box .leftWeakness1 .leftWeakness
   z-index: 3;
 }
 body .container .container-box .container-inner-box .leftWeakness1 .leftWeaknessEmoji1 {
-  top: 0%;
-  height: 90%;
+  text-align: center;
   width: 30%;
-  font-size: 3rem;
+  height: 90%;
 }
 body .container .container-box .container-inner-box .leftWeakness1 .lefWeaknessComment1 {
-  left: 30%;
-  height: 82%;
-  width: 60%;
-  top: 8%;
-  position: absolute;
+  text-align: center;
+  width: 65%;
+  height: 90%;
 }
 body .container .container-box .container-inner-box .leftWeakness2 {
   left: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 body .container .container-box .container-inner-box .leftWeakness2 .leftWeaknessIcon2 {
   position: absolute;
@@ -268,19 +277,20 @@ body .container .container-box .container-inner-box .leftWeakness2 .leftWeakness
   z-index: 3;
 }
 body .container .container-box .container-inner-box .leftWeakness2 .leftWeaknessEmoji2 {
-  top: 0%;
-  height: 90%;
+  text-align: center;
   width: 30%;
-  font-size: 3rem;
+  height: 90%;
 }
 body .container .container-box .container-inner-box .leftWeakness2 .lefWeaknessComment2 {
-  left: 30%;
-  height: 82%;
-  width: 60%;
-  top: 8%;
-  position: absolute;
+  text-align: center;
+  width: 65%;
+  height: 90%;
 }
 body .container .container-box .container-inner-box .rightPower1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   right: 5%;
 }
 body .container .container-box .container-inner-box .rightPower1 .rightPowerIcon1 {
@@ -292,19 +302,20 @@ body .container .container-box .container-inner-box .rightPower1 .rightPowerIcon
   z-index: 3;
 }
 body .container .container-box .container-inner-box .rightPower1 .rightPowerEmoji1 {
-  top: 0%;
-  height: 90%;
+  text-align: center;
   width: 30%;
-  font-size: 3rem;
+  height: 90%;
 }
 body .container .container-box .container-inner-box .rightPower1 .rightPowerComment1 {
-  left: 30%;
-  height: 82%;
-  width: 60%;
-  top: 8%;
-  position: absolute;
+  text-align: center;
+  width: 65%;
+  height: 90%;
 }
 body .container .container-box .container-inner-box .rightPower2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   right: 5%;
 }
 body .container .container-box .container-inner-box .rightPower2 .rightPowerIcon2 {
@@ -316,20 +327,21 @@ body .container .container-box .container-inner-box .rightPower2 .rightPowerIcon
   z-index: 3;
 }
 body .container .container-box .container-inner-box .rightPower2 .rightPowerEmoji2 {
-  top: 0%;
-  height: 90%;
+  text-align: center;
   width: 30%;
-  font-size: 3rem;
+  height: 90%;
 }
 body .container .container-box .container-inner-box .rightPower2 .rightPowerComment2 {
-  left: 30%;
-  height: 82%;
-  width: 60%;
-  top: 8%;
-  position: absolute;
+  text-align: center;
+  width: 65%;
+  height: 90%;
 }
 body .container .container-box .container-inner-box .rightWeakness1 {
   right: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 body .container .container-box .container-inner-box .rightWeakness1 .rightWeaknessIcon1 {
   position: absolute;
@@ -340,19 +352,20 @@ body .container .container-box .container-inner-box .rightWeakness1 .rightWeakne
   z-index: 3;
 }
 body .container .container-box .container-inner-box .rightWeakness1 .rightWeaknessEmoji1 {
-  top: 0%;
-  height: 90%;
+  text-align: center;
   width: 30%;
-  font-size: 3rem;
+  height: 90%;
 }
 body .container .container-box .container-inner-box .rightWeakness1 .rightWeaknessComment1 {
-  left: 30%;
-  height: 82%;
-  width: 60%;
-  top: 8%;
-  position: absolute;
+  text-align: center;
+  width: 65%;
+  height: 90%;
 }
 body .container .container-box .container-inner-box .rightWeakness2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   right: 5%;
 }
 body .container .container-box .container-inner-box .rightWeakness2 .rightWeaknessIcon2 {
@@ -364,17 +377,14 @@ body .container .container-box .container-inner-box .rightWeakness2 .rightWeakne
   z-index: 3;
 }
 body .container .container-box .container-inner-box .rightWeakness2 .rightWeaknessEmoji2 {
-  top: 0%;
-  height: 90%;
+  text-align: center;
   width: 30%;
-  font-size: 3rem;
+  height: 90%;
 }
 body .container .container-box .container-inner-box .rightWeakness2 .rightWeaknessComment2 {
-  left: 30%;
-  height: 82%;
-  width: 60%;
-  top: 8%;
-  position: absolute;
+  text-align: center;
+  width: 65%;
+  height: 90%;
 }
 body .container .left, body .container .right {
   width: 50%;
